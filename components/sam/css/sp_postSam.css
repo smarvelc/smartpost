@@ -164,7 +164,6 @@
 .samTimeline,
 .samFramesIndicator {
     position: absolute;
-    right: 0px;
     width: 40px;
     display: inline-block;
     font-family: sans-serif;
