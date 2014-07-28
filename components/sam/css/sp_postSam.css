@@ -165,10 +165,10 @@
     position: absolute;
     right: 0px;
     width: 40px;
-    padding-top: 40px;
+    top: 20px;
     display: inline-block;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
