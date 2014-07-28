@@ -65,7 +65,7 @@ if (!class_exists("sp_postSam")) {
                 $html.= '</tr>';
                 $html .= '<tr id="samExtraControls">';
                     $html .= '<td>';
-                        $html .= '<p id="samFramesIndicator-'. $this->ID .'" class="samFramesIndicator"> 0/60 </p>';
+                        $html .= '<p id="samFramesIndicator-'. $this->ID .'" class="samFramesIndicator" style="text-align: center;"> 0/60 </p>';
                         $html .= '<button id="samToggleOverlay-'. $this->ID .'" class="samToggleOverlay"/>';
                         $html .= '<button id="samRedoButton-'. $this->ID .'" class="samRedoButton" data-compid="' . $this->ID . '">Start Over</button>';
                         $html .= '<p id="download-sam-movie-' . $this->ID . '" class="download-sam-movie">';
