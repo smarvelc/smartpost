@@ -161,13 +161,13 @@
 }
 
 
-.samTimeline,
-.samFramesIndicator {
+.samTimeline .samFramesIndicator {
     position: absolute;
+    right: 0px;
     width: 40px;
     display: inline-block;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     text-align: center;
 }
 
