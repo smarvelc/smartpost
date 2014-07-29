@@ -347,7 +347,7 @@
             */
              function resetFrames(){
                 playing = false;
-                frames = [];
+                //frames = [];
                 submittedFrames = 0;
                 framesIndicator.innerText = "0/"+String(maxFrames);
                 overlay.getContext("2d").clearRect( 0, 0, width, height );
