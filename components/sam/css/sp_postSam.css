@@ -1,9 +1,4 @@
 /* clear floats */
-video {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
 .samClear:after {
 	content: "";
     display: table;
