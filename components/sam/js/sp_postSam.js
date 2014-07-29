@@ -337,7 +337,7 @@
                     playing = false;
                 }
             });
-             function undoFrames(){
+             function resetFrames(){
                 playing = false;
                 frames = frames.splice(frames.length-1);
                 submittedFrames = frames.length-1;
@@ -355,7 +355,7 @@
 */
             //clear all frames and images taken so far
             redoButton.click(function(){
-                undoFrames();
+                resetFrames();
                 var compID = $(this).data('compid');
                 $.ajax({
                     url  : SP_AJAX_URL,
