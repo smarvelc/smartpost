@@ -151,8 +151,7 @@
                 canvas.setAttribute('width', width);
                 canvas.setAttribute('height', height);
                 // Reverse the canvas image
-                context.translate(width, 0);
-                context.scale(-1, 1);
+                context.scale(1, 1);
 
                setInterval(function() {
 
@@ -261,8 +260,6 @@
                         }
                         // draw image
                         ctx.putImageData(imageData, 0, 0);
-                        ctx.translate(w, 0);
-                        ctx.scale(-1, 1);
                     }
                 }
             };
