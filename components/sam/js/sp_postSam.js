@@ -337,14 +337,15 @@
                     playing = false;
                 }
             });
-             /*function resetFrames(){
+             function resetFrames(){
                 playing = false;
-                frames = frames.pop(frames.length);
+                frames.pop(frames.length);
                 submittedFrames = frames.length-1;
                 framesIndicator.innerText = "frames.length-1/"+String(maxFrames);
                 overlay.getContext("2d").clearRect( 0, 0, width, height );
             }
-            */
+            
+            /*
              function resetFrames(){
                 playing = false;
                 //frames = [];
@@ -352,7 +353,7 @@
                 framesIndicator.innerText = "0/"+String(maxFrames);
                 overlay.getContext("2d").clearRect( 0, 0, width, height );
             }
-
+*/
 
             //clear all frames and images taken so far
             redoButton.click(function(){
