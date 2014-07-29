@@ -106,7 +106,7 @@ if (!class_exists("sp_postSamAJAX")) {
                 header("HTTP/1.0 409 Could find component ID to udpate.");
                 exit;
             }
-
+ 
             $compID = (int) $_POST['compid'];
             $samComponent = new sp_postSam($compID);
 
