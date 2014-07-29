@@ -337,8 +337,14 @@
                     playing = false;
                 }
             });
-
-            function resetFrames(){
+             function undoFrames(){
+                playing = false;
+                frames = frames.splice(frames.length-1);
+                submittedFrames = frames.length-1;
+                framesIndicator.innerText = "frames.length-1/"+String(maxFrames);
+                overlay.getContext("2d").clearRect( 0, 0, width, height );
+            }
+            /* function resetFrames(){
                 playing = false;
                 frames = [];
                 submittedFrames = 0;
@@ -346,9 +352,10 @@
                 overlay.getContext("2d").clearRect( 0, 0, width, height );
             }
 
+*/
             //clear all frames and images taken so far
             redoButton.click(function(){
-                resetFrames();
+                undoFrames();
                 var compID = $(this).data('compid');
                 $.ajax({
                     url  : SP_AJAX_URL,
