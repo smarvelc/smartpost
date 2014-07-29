@@ -41,9 +41,8 @@ if (!class_exists("sp_postSamAJAX")) {
 
             $imgs = $samComponent->imgs;
             if( is_array( $imgs ) && !empty( $imgs ) ){
-                foreach( $imgs as $img ){
                     if( file_exists( $img) ){
-                        unlink( $img );
+                        imgs_pop;
                     }
                 }
                 $samComponent->imgs = array();
