@@ -45,7 +45,7 @@ if (!class_exists("sp_postSamAJAX")) {
                     if( file_exists( $img) ){
                         array_pop($imgs);
                     }
-                }
+                
                 $samComponent->imgs = array();
                 $samComponent->update();
             }
