@@ -152,7 +152,7 @@
                 canvas.setAttribute('height', height);
                 // Reverse the canvas image
                 context.translate(width, 0);
-                context.scale(-1, 1);
+                context.scale(1, 1);
 
                setInterval(function() {
 
