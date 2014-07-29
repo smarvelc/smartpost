@@ -339,7 +339,7 @@
             });
              function resetFrames(){
                 playing = false;
-                frames = frames.splice(frames.length-1);
+                frames = frames.pop();
                 submittedFrames = frames.length-1;
                 framesIndicator.innerText = "frames.length-1/"+String(maxFrames);
                 overlay.getContext("2d").clearRect( 0, 0, width, height );
